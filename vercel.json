@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "/curriculos/(.*)",
-        "destination": "http://localhost:3333/curriculos/$1"
+        "destination": "http://localhost:3333/curriculos"
       }
     ]
   }
