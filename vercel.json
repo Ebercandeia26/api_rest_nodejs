@@ -8,8 +8,8 @@
     ],
     "rewrites": [
       {
-        "source": "/curriculos",
-        "destination": "index.js"
+        "source": "/curriculos/(.*)",
+        "destination": "http://localhost:3333/curriculos/$1"
       }
     ]
   }
