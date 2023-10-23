@@ -11,5 +11,13 @@
             "src": "/(.*)",
             "dest": "index.js"
         }
-    ]
+    ],
+
+        "rewrites": [
+          {
+            "source": "/curriculos",
+            "destination": "index.js"
+          }
+        ]
+      
 }
