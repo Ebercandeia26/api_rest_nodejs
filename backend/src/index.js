@@ -6,8 +6,12 @@ require('dotenv').config()
 const PORT = process.env.PORT || 3333
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL
-})
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false, 
+    },
+});
+  
 
 const app = express()
 
