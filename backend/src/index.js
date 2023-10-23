@@ -18,8 +18,8 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.get('/', (req, res) => {console.log('Hello World!!!!')})
-app.get('/curriculos', async (req, res) => {
+
+app.get('/', async (req, res) => {
     try {
         const { rows } = await pool.query('SELECT * FROM curriculos')
         return res.status(200).send(rows)
